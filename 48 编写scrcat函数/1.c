@@ -26,7 +26,8 @@ int main()
 {
     char str1[50] = "Hello";
     const char *str2 = " World!";
-    my_strcat(str1, str2);
-    printf(": %s\n", str1);
+    char *result = "0";
+    result = my_strcat(str1, str2);
+    printf("%s\n", result);
     return 0;
 }
